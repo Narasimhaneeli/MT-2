@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function showDate() {
+            const currentDate = new Date();
+            const date = currentDate.toLocaleDateString();
+            document.getElementById('date').innerHTML = `${date}`;
+        }
+    </script>
+
+
+<button onclick="showDate()">show date</button>
+<p id="date"></p>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Show Time.</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
